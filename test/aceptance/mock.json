@@ -1,0 +1,864 @@
+{
+  "site_id": "MLA",
+  "query": ":\"iphone\"",
+  "paging": {
+    "total": 16128,
+    "offset": 0,
+    "limit": 1,
+    "primary_results": 1001
+  },
+  "results": [
+    {
+      "id": "MLA823005561",
+      "site_id": "MLA",
+      "title": "Apple iPhone 6s 32 Gb Gris Espacial",
+      "seller": {
+        "id": 245722648,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 30990.20,
+      "currency_id": "ARS",
+      "available_quantity": 1,
+      "sold_quantity": 1,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2039-10-27T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.com.ar/p/MLA6282512",
+      "thumbnail": "http://mla-s2-p.mlstatic.com/898290-MLA31003118647_062019-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 4229.36,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQlZJTDYzNzZa",
+        "city_name": "Villa Devoto"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQlZJTDYzNzZa",
+          "name": "Villa Devoto"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "name": "Marca",
+          "value_id": "9344",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "id": "BRAND",
+          "value_name": "Apple",
+          "values": [
+            {
+              "id": "9344",
+              "name": "Apple",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1
+        },
+        {
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "id": "CPU_MODEL",
+          "value_id": "6973027",
+          "value_struct": null,
+          "values": [
+            {
+              "struct": null,
+              "source": 1,
+              "id": "6973027",
+              "name": "2x1.84 GHz Twister"
+            }
+          ],
+          "name": "Modelo de CPU",
+          "value_name": "2x1.84 GHz Twister"
+        },
+        {
+          "name": "Condición del ítem",
+          "attribute_group_name": "Otros",
+          "id": "ITEM_CONDITION",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "2230284",
+              "name": "Nuevo",
+              "struct": null,
+              "source": 1572
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "source": 1572
+        },
+        {
+          "value_name": "iPhone",
+          "value_struct": null,
+          "values": [
+            {
+              "name": "iPhone",
+              "struct": null,
+              "source": 1,
+              "id": "58993"
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "LINE",
+          "value_id": "58993",
+          "source": 1,
+          "name": "Línea"
+        },
+        {
+          "value_id": "312151",
+          "value_name": "iPhone 6s",
+          "value_struct": null,
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "id": "MODEL",
+          "name": "Modelo",
+          "values": [
+            {
+              "id": "312151",
+              "name": "iPhone 6s",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "attribute_group_id": "OTHERS"
+        },
+        {
+          "name": "Modelo del procesador",
+          "value_id": "6973026",
+          "value_name": "Apple A9",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "id": "PROCESSOR_MODEL",
+          "values": [
+            {
+              "id": "6973026",
+              "name": "Apple A9",
+              "struct": null,
+              "source": 1
+            }
+          ],
+          "source": 1
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA1055",
+      "official_store_id": null,
+      "catalog_product_id": "MLA6282512",
+      "tags": [
+        "good_quality_thumbnail",
+        "brand_verified",
+        "extended_warranty_eligible",
+        "good_quality_picture",
+        "immediate_payment",
+        "cart_eligible"
+      ],
+      "catalog_listing": true
+    }
+  ],
+  "secondary_results": [],
+  "related_results": [],
+  "sort": {
+    "id": "relevance",
+    "name": "Más relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Menor precio"
+    },
+    {
+      "id": "price_desc",
+      "name": "Mayor precio"
+    }
+  ],
+  "filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA1055",
+          "name": "Celulares y Smartphones",
+          "path_from_root": [
+            {
+              "id": "MLA1051",
+              "name": "Celulares y Teléfonos"
+            },
+            {
+              "id": "MLA1055",
+              "name": "Celulares y Smartphones"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LINE",
+      "name": "Línea",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "58993",
+          "name": "iPhone"
+        }
+      ]
+    },
+    {
+      "id": "BRAND",
+      "name": "Marca",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "9344",
+          "name": "Apple"
+        }
+      ]
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "official_store",
+      "name": "Tiendas oficiales",
+      "type": "text",
+      "values": [
+        {
+          "id": "all",
+          "name": "Todas las tiendas oficiales",
+          "results": 4
+        }
+      ]
+    },
+    {
+      "id": "discount",
+      "name": "Descuentos",
+      "type": "range",
+      "values": [
+        {
+          "id": "10-100",
+          "name": "Desde 10% off",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Ubicación",
+      "type": "text",
+      "values": [
+        {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal",
+          "results": 7135
+        },
+        {
+          "id": "TUxBUEdSQWU4ZDkz",
+          "name": "Bs.As. G.B.A. Norte",
+          "results": 1870
+        },
+        {
+          "id": "TUxBUEdSQXJlMDNm",
+          "name": "Bs.As. G.B.A. Sur",
+          "results": 1684
+        },
+        {
+          "id": "TUxBUEdSQWVmNTVm",
+          "name": "Bs.As. G.B.A. Oeste",
+          "results": 1354
+        },
+        {
+          "id": "TUxBUENPUmFkZGIw",
+          "name": "Córdoba",
+          "results": 776
+        },
+        {
+          "id": "TUxBUFNBTmU5Nzk2",
+          "name": "Santa Fe",
+          "results": 613
+        },
+        {
+          "id": "TUxBUFpPTmFpbnRl",
+          "name": "Buenos Aires Interior",
+          "results": 493
+        },
+        {
+          "id": "TUxBUENPU2ExMmFkMw",
+          "name": "Bs.As. Costa Atlántica",
+          "results": 288
+        },
+        {
+          "id": "TUxBUE1JU3MzNjIx",
+          "name": "Misiones",
+          "results": 209
+        },
+        {
+          "id": "TUxBUE1FTmE5OWQ4",
+          "name": "Mendoza",
+          "results": 208
+        },
+        {
+          "id": "TUxBUFRVQ244NmM3",
+          "name": "Tucumán",
+          "results": 136
+        },
+        {
+          "id": "TUxBUENPUnM5MjI0",
+          "name": "Corrientes",
+          "results": 80
+        },
+        {
+          "id": "TUxBUEVOVHMzNTdm",
+          "name": "Entre Ríos",
+          "results": 80
+        },
+        {
+          "id": "TUxBUFNBTGFjMTJi",
+          "name": "Salta",
+          "results": 80
+        },
+        {
+          "id": "TUxBUE5FVW4xMzMzNQ",
+          "name": "Neuquén",
+          "results": 64
+        },
+        {
+          "id": "TUxBUFLNT29iZmZm",
+          "name": "Río Negro",
+          "results": 64
+        },
+        {
+          "id": "TUxBUENIVXQxNDM1MQ",
+          "name": "Chubut",
+          "results": 56
+        },
+        {
+          "id": "TUxBUEZPUmE1OTk5",
+          "name": "Formosa",
+          "results": 52
+        },
+        {
+          "id": "TUxBUENIQW8xMTNhOA",
+          "name": "Chaco",
+          "results": 38
+        },
+        {
+          "id": "TUxBUExBWmEyNzY0",
+          "name": "La Rioja",
+          "results": 36
+        },
+        {
+          "id": "TUxBUFNBTm5lYjU4",
+          "name": "San Juan",
+          "results": 36
+        },
+        {
+          "id": "TUxBUFNBTnM0ZTcz",
+          "name": "San Luis",
+          "results": 36
+        },
+        {
+          "id": "TUxBUFNBTm9lOTlk",
+          "name": "Santiago del Estero",
+          "results": 32
+        },
+        {
+          "id": "TUxBUExBWmE1OWMy",
+          "name": "La Pampa",
+          "results": 28
+        },
+        {
+          "id": "TUxBUFRJRVoxM2M5YQ",
+          "name": "Tierra del Fuego",
+          "results": 28
+        },
+        {
+          "id": "TUxBUEpVSnk3YmUz",
+          "name": "Jujuy",
+          "results": 20
+        },
+        {
+          "id": "TUxBUENBVGFiY2Fm",
+          "name": "Catamarca",
+          "results": 16
+        },
+        {
+          "id": "TUxBUFNBTno3ZmY5",
+          "name": "Santa Cruz",
+          "results": 4
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "*-20000.0",
+          "name": "Hasta $ 20.000",
+          "results": 4822
+        },
+        {
+          "id": "20000.0-45000.0",
+          "name": "$20.000 a $45.000",
+          "results": 5529
+        },
+        {
+          "id": "45000.0-*",
+          "name": "Más de $45.000",
+          "results": 5773
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "Filtro por MercadoPago",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con MercadoPago",
+          "results": 16124
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Pago",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "En cuotas",
+          "results": 16100
+        },
+        {
+          "id": "no_interest",
+          "name": "Sin interés",
+          "results": 1767
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Tipo de entrega",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Con envío",
+          "results": 14768
+        },
+        {
+          "id": "fulfillment",
+          "name": "Full",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Filtro por calidad de vendedores",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Mejores vendedores",
+          "results": 356
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Filtro por fecha de comienzo",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 360
+        }
+      ]
+    },
+    {
+      "id": "until",
+      "name": "Filtro por fecha de finalización",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Finalizan hoy",
+          "results": 84
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Filtro por publicaciones con video",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publicaciones con video",
+          "results": 458
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Filtro por publicaciones con imágenes",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con fotos",
+          "results": 16092
+        }
+      ]
+    },
+    {
+      "id": "shipping_cost",
+      "name": "Costo de envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "free",
+          "name": "Gratis",
+          "results": 7677
+        }
+      ]
+    },
+    {
+      "id": "CARRIER",
+      "name": "Compañía telefónica",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "298335",
+          "name": "Liberado",
+          "results": 14724
+        },
+        {
+          "id": "303170",
+          "name": "Movistar",
+          "results": 128
+        },
+        {
+          "id": "298333",
+          "name": "Claro",
+          "results": 124
+        },
+        {
+          "id": "303171",
+          "name": "Personal",
+          "results": 88
+        }
+      ]
+    },
+    {
+      "id": "INTERNAL_MEMORY",
+      "name": "Memoria interna",
+      "type": "range",
+      "values": [
+        {
+          "id": "(*-64GB)",
+          "name": "Menos de 64 GB",
+          "results": 5212
+        },
+        {
+          "id": "[64GB-128GB)",
+          "name": "64 a 127 GB",
+          "results": 5608
+        },
+        {
+          "id": "[128GB-256GB)",
+          "name": "128 a 255 GB",
+          "results": 2376
+        },
+        {
+          "id": "[256GB-*)",
+          "name": "256 GB o más",
+          "results": 2556
+        }
+      ]
+    },
+    {
+      "id": "IS_DUAL_SIM",
+      "name": "Otras características",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "242085",
+          "name": "Es Dual SIM",
+          "results": 1980
+        }
+      ]
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "2230581",
+          "name": "Usado",
+          "results": 11768
+        },
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "results": 4364
+        },
+        {
+          "id": "2230582",
+          "name": "Reacondicionado",
+          "results": 212
+        }
+      ]
+    },
+    {
+      "id": "MODEL",
+      "name": "Modelo",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "312155",
+          "name": "iPhone 7",
+          "results": 1688
+        },
+        {
+          "id": "312151",
+          "name": "iPhone 6s",
+          "results": 1168
+        },
+        {
+          "id": "312157",
+          "name": "iPhone 7 Plus",
+          "results": 1156
+        },
+        {
+          "id": "312149",
+          "name": "iPhone 6",
+          "results": 1152
+        },
+        {
+          "id": "1164456",
+          "name": "iPhone X",
+          "results": 1084
+        },
+        {
+          "id": "2244673",
+          "name": "iPhone 8 Plus",
+          "results": 860
+        },
+        {
+          "id": "2244670",
+          "name": "iPhone 8",
+          "results": 724
+        },
+        {
+          "id": "312154",
+          "name": "iPhone SE",
+          "results": 636
+        },
+        {
+          "id": "5414168",
+          "name": "iPhone XS Max",
+          "results": 468
+        },
+        {
+          "id": "5414260",
+          "name": "iPhone XR",
+          "results": 432
+        },
+        {
+          "id": "312153",
+          "name": "iPhone 6s Plus",
+          "results": 384
+        },
+        {
+          "id": "5414079",
+          "name": "iPhone XS",
+          "results": 376
+        },
+        {
+          "id": "312144",
+          "name": "iPhone 5s",
+          "results": 332
+        },
+        {
+          "id": "31998",
+          "name": "X",
+          "results": 328
+        },
+        {
+          "id": "14608",
+          "name": "iPhone",
+          "results": 316
+        },
+        {
+          "id": "7739079",
+          "name": "iPhone 11",
+          "results": 308
+        },
+        {
+          "id": "4904058",
+          "name": "8 Plus",
+          "results": 288
+        },
+        {
+          "id": "52828",
+          "name": "7 Plus",
+          "results": 284
+        },
+        {
+          "id": "27251",
+          "name": "7",
+          "results": 280
+        },
+        {
+          "id": "7741023",
+          "name": "iPhone 11 Pro",
+          "results": 236
+        },
+        {
+          "id": "312152",
+          "name": "iPhone 5",
+          "results": 212
+        },
+        {
+          "id": "312150",
+          "name": "iPhone 6 Plus",
+          "results": 184
+        },
+        {
+          "id": "312143",
+          "name": "iPhone 5c",
+          "results": 172
+        },
+        {
+          "id": "59833",
+          "name": "6",
+          "results": 168
+        },
+        {
+          "id": "7741677",
+          "name": "iPhone 11 Pro Max",
+          "results": 152
+        },
+        {
+          "id": "58054",
+          "name": "XR",
+          "results": 152
+        },
+        {
+          "id": "14610",
+          "name": "iPhone 4",
+          "results": 148
+        },
+        {
+          "id": "11043",
+          "name": "8",
+          "results": 116
+        },
+        {
+          "id": "165838",
+          "name": "SE",
+          "results": 104
+        },
+        {
+          "id": "312145",
+          "name": "iPhone 4s",
+          "results": 100
+        },
+        {
+          "id": "5729",
+          "name": "XS",
+          "results": 76
+        },
+        {
+          "id": "59000",
+          "name": "5s",
+          "results": 72
+        },
+        {
+          "id": "84612",
+          "name": "6 Plus",
+          "results": 44
+        },
+        {
+          "id": "5414092",
+          "name": "iPhone XS Dual SIM",
+          "results": 32
+        },
+        {
+          "id": "58992",
+          "name": "5c",
+          "results": 28
+        },
+        {
+          "id": "58615",
+          "name": "5",
+          "results": 28
+        },
+        {
+          "id": "58458",
+          "name": "4S",
+          "results": 24
+        },
+        {
+          "id": "14609",
+          "name": "iPhone 3GS",
+          "results": 20
+        },
+        {
+          "id": "14605",
+          "name": "iPhone 3G",
+          "results": 16
+        }
+      ]
+    }
+  ]
+}

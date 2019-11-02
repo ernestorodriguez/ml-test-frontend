@@ -2,7 +2,11 @@ const Router = require('express');
 const router = Router();
 
 
-router.get('/', (req, res) => {
+router.get('/items', (req, res) => {
+    res.send('Hello World form Api!')
+});
+
+router.get('/items/:id', (req, res) => {
     res.send('Hello World form Api!')
 });
 
