@@ -8,8 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git init"
+    "url": "https://github.com/ernestorodriguez/ml-test-frontend"
   },
-  "author": "",
+  "author": "Ernesto Rodriguez",
   "license": "ISC"
 }
