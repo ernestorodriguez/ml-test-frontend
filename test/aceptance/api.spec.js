@@ -5,12 +5,8 @@ const mock = require('./mock.json');
 describe('Acceptance test for Api items', () => {
    test('must return search result in the correct format', () => {
       const search = new Search(new SearchDTO(mock));
-       expect(search.result()).toEqual(JSON.stringify({
-           autor: {
-               name: 'Ernesto',
-               lastName: 'Rodriguez',
-           },
-           categories: ['Celulares y Smartphones', 'Celulares y Smartphones'],
+       expect(JSON.stringify(search.result())).toEqual(JSON.stringify({
+           categories: ['Celulares y Teléfonos', 'Celulares y Smartphones'],
            items:[
                {
                    id: 'MLA823005561',
