@@ -1,13 +1,15 @@
 const Router = require('express');
+const author = require('../lib/middlewares/author');
+const itemSearchResponse = require('../lib/middlewares/itemSearch');
+const {
+    respondAsJSON,
+    configResponse,
+    searchItemsService,
+} = require('../lib/middlewares/utils');
+
 const router = Router();
 
-
-router.get('/items', (req, res) => {
-    res.send('Hello World form Api!')
-});
-
-router.get('/items/:id', (req, res) => {
-    res.send('Hello World form Api!')
-});
+router.get('/items', configResponse, author, searchItemsService, itemSearchResponse, respondAsJSON);
+router.get('/items/:id', configResponse, author, respondAsJSON);
 
 module.exports = router;

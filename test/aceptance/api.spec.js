@@ -1,5 +1,6 @@
 const author = require('../../lib/middlewares/author');
 const search = require('../../lib/middlewares/itemSearch');
+const { respondAsJSON } = require('../../lib/middlewares/utils');
 const SearchDTO = require('../../lib/ItemSearch/SearchDTO');
 const mock = require('./mock.json');
 
@@ -10,17 +11,22 @@ describe('Acceptance test for Api items', () => {
         const req = {
             locals:{
                 searchApiResult: new SearchDTO(mock),
-            }
+            },
+            serverResponse: {},
         };
         const res = {
-            responseData: {},
+            status() {
+                return this;
+            },
             json(serverResponse) {
                 result = serverResponse;
             }
         };
 
         author(req, res, () => {});
-        search(req, res);
+        search(req, res, () => {});
+        respondAsJSON(req, res, () => {});
+
         expect(JSON.stringify(result)).toEqual(JSON.stringify({
             author: {
                 name: 'Ernesto',
