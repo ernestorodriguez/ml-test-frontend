@@ -1,13 +1,33 @@
-const Search = require('../../lib/ItemSearch');
+const author = require('../../lib/middlewares/author');
+const search = require('../../lib/middlewares/itemSearch');
 const SearchDTO = require('../../lib/ItemSearch/SearchDTO');
 const mock = require('./mock.json');
 
 describe('Acceptance test for Api items', () => {
    test('must return search result in the correct format', () => {
-      const search = new Search(new SearchDTO(mock));
-       expect(JSON.stringify(search.result())).toEqual(JSON.stringify({
-           categories: ['Celulares y Teléfonos', 'Celulares y Smartphones'],
-           items:[
+
+        let result;
+        const req = {
+            locals:{
+                searchApiResult: new SearchDTO(mock),
+            }
+        };
+        const res = {
+            responseData: {},
+            json(serverResponse) {
+                result = serverResponse;
+            }
+        };
+
+        author(req, res, () => {});
+        search(req, res);
+        expect(JSON.stringify(result)).toEqual(JSON.stringify({
+            author: {
+                name: 'Ernesto',
+                lastName: 'Rodriguez'
+            },
+            categories: ['Celulares y Teléfonos', 'Celulares y Smartphones'],
+            items:[
                {
                    id: 'MLA823005561',
                    title: 'Apple iPhone 6s 32 Gb Gris Espacial',
@@ -20,7 +40,7 @@ describe('Acceptance test for Api items', () => {
                    condition: 'new',
                    free_shipping: true,
                }
-           ],
+            ],
        }));
    })
 });
