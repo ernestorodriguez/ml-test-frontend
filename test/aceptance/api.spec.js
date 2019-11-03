@@ -1,5 +1,5 @@
-const Search = require('../../lib/search');
-const SearchDTO = require('../../lib/search/SearchDTO');
+const Search = require('../../lib/ItemSearch');
+const SearchDTO = require('../../lib/ItemSearch/SearchDTO');
 const mock = require('./mock.json');
 
 describe('Acceptance test for Api items', () => {
