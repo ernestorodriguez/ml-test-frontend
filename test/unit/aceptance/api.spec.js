@@ -1,8 +1,8 @@
-const author = require('../../lib/middlewares/author');
-const search = require('../../lib/middlewares/itemSearch');
-const itemDescription = require('../../lib/middlewares/itemDescription');
-const { respondAsJSON } = require('../../lib/middlewares/utils');
-const SearchDTO = require('../../lib/ItemSearch/SearchDTO');
+const author = require('../../../lib/middlewares/author');
+const search = require('../../../lib/middlewares/itemSearch');
+const itemDescription = require('../../../lib/middlewares/itemDescription');
+const { respondAsJSON } = require('../../../lib/middlewares/utils');
+const SearchDTO = require('../../../lib/ItemSearch/SearchDTO');
 const mock = require('./mock.json');
 const mockItem = require('./mockItem.json');
 
