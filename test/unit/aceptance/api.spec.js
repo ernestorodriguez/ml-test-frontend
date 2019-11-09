@@ -1,20 +1,38 @@
 const author = require('../../../lib/middlewares/author');
 const search = require('../../../lib/middlewares/itemSearch');
 const itemDescription = require('../../../lib/middlewares/itemDescription');
-const { respondAsJSON } = require('../../../lib/middlewares/utils');
+const { configResponse, respondAsJSON, searchItemsService, itemService } = require('../../../lib/middlewares/utils');
 const mock = require('./mock.json');
 const mockItem = require('./mockItem.json');
+const axios = require('axios');
+
+jest.mock('axios');
 
 describe('Acceptance test for Api items', () => {
-    test('must return search result in the correct format', () => {
+    afterEach(() => {
+        axios.get.mockClear();
+    });
+
+    afterAll(() => {
+        axios.mockRestore();
+    });
+
+    test('must return search result in the correct format', async () => {
+        axios.get.mockImplementation(() => new Promise((resolve) => {
+            setTimeout(() => resolve({
+                status: 200,
+                data: mock,
+            }), 1000)
+        }));
 
         let result;
-        const req = {};
+        const req = {
+            query: {
+                q: 'iphone 8'
+            }
+        };
         const res = {
-            serverResponse: {},
-            locals:{
-                searchApiResult: mock,
-            },
+            locals:{},
             status() {
                 return this;
             },
@@ -23,7 +41,9 @@ describe('Acceptance test for Api items', () => {
             }
         };
 
+        configResponse(req, res, () => {});
         author(req, res, () => {});
+        await searchItemsService(req, res, () => {});
         search(req, res, () => {});
         respondAsJSON(req, res, () => {});
 
@@ -73,10 +93,26 @@ describe('Acceptance test for Api items', () => {
             ],
        }));
    });
-    test('must return item description result in the correct format', () => {
+    test('must return item description result in the correct format', async () => {
+        let response = 0;
+        const responses = [mockItem, {
+            plain_text: 'item description',
+        }];
+        axios.get.mockImplementation(() => {
+            const promise = Promise.resolve({
+                status: 200,
+                data: responses[response]
+            });
+            response ++;
+            return promise;
+        });
 
         let result;
-        const req = {};
+        const req = {
+            params: {
+                id: 'MLA1234'
+            }
+        };
         const res = {
             serverResponse: {},
             locals:{
@@ -93,7 +129,9 @@ describe('Acceptance test for Api items', () => {
             }
         };
 
+        configResponse(req, res, () => {});
         author(req, res, () => {});
+        await itemService(req, res, () => {});
         itemDescription(req, res, () => {});
         respondAsJSON(req, res, () => {});
 
