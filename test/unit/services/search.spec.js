@@ -15,6 +15,5 @@ describe('Search Item Service', () => {
             console.log(response);
             expect(axios.get).toBeCalledWith(arg1, arg2);
         })
-
     });
 });
