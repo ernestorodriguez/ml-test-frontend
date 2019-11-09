@@ -1,11 +1,15 @@
-const service = require('../../../services/search');
+const service = require('../../../services/items');
 const axios = require('axios');
 
 jest.mock('axios');
 
 describe('Search Item Service', () => {
+    afterEach(() => {
+        axios.get.mockClear();
+    });
+
     afterAll(() => {
-        axios.mockReset();
+        axios.mockRestore();
     });
 
     test('must Make api call with correct params', (done) => {
@@ -16,18 +20,15 @@ describe('Search Item Service', () => {
             }
         }));
 
-        service.get('iphone 8 plus').then((response) => {
-            console.log(response);
-
+        service.get('MLA823005561').then((response) => {
+           expect(response).toEqual({
+               itemsApiResult: { foo: 'bar' },
+               itemsDescriptionApiResult: { foo: 'bar' },
+           });
             done()
         });
-        expect(axios.get).toBeCalledWith(
-            'https://api.mercadolibre.com/sites/MLA/search',
-            {
-                params: {
-                    q: "iphone 8 plus"
-                }
-            }
+        expect(axios.get.mock.calls).toEqual(
+            [["https://api.mercadolibre.com/items/MLA823005561"],["https://api.mercadolibre.com/items/MLA823005561/description"]]
         );
     });
 
@@ -39,7 +40,7 @@ describe('Search Item Service', () => {
             }
         }));
 
-        service.get('iphone 8 plus').then((response) => {
+        service.get('MLA123123').then((response) => {
             expect(response).toEqual({});
             done()
         });

@@ -12,7 +12,8 @@ class SearchItemsService {
         }).then((response) => {
             return response.data;
         }).catch((error) => {
-            return error
+            console.error(`not data found for query: "${query}", error: ${JSON.stringify(error)}`);
+            return {}
         });
     }
 }

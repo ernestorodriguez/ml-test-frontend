@@ -6,11 +6,12 @@ const {
     respondAsJSON,
     configResponse,
     searchItemsService,
+    itemService,
 } = require('../lib/middlewares/utils');
 
 const router = Router();
 
 router.get('/items', configResponse, author, searchItemsService, itemSearchResponse, respondAsJSON);
-router.get('/items/:id', configResponse, author, itemDescriptionResponse, respondAsJSON);
+router.get('/items/:id', configResponse, author, itemService, itemDescriptionResponse, respondAsJSON);
 
 module.exports = router;
