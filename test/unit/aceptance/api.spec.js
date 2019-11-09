@@ -2,7 +2,6 @@ const author = require('../../../lib/middlewares/author');
 const search = require('../../../lib/middlewares/itemSearch');
 const itemDescription = require('../../../lib/middlewares/itemDescription');
 const { respondAsJSON } = require('../../../lib/middlewares/utils');
-const SearchDTO = require('../../../lib/ItemSearch/SearchDTO');
 const mock = require('./mock.json');
 const mockItem = require('./mockItem.json');
 
@@ -10,12 +9,11 @@ describe('Acceptance test for Api items', () => {
     test('must return search result in the correct format', () => {
 
         let result;
-        const req = {
-            serverResponse: {},
-        };
+        const req = {};
         const res = {
+            serverResponse: {},
             locals:{
-                searchApiResult: new SearchDTO(mock),
+                searchApiResult: mock,
             },
             status() {
                 return this;
@@ -78,10 +76,9 @@ describe('Acceptance test for Api items', () => {
     test('must return item description result in the correct format', () => {
 
         let result;
-        const req = {
-            serverResponse: {},
-        };
+        const req = {};
         const res = {
+            serverResponse: {},
             locals:{
                 itemsApiResult: mockItem,
                 itemsDescriptionApiResult: {
