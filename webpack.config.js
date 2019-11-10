@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
-        spa: './app/client/index.js',
+        spa: './app/client/spa.js',
     },
     output: {
         path: __dirname + '/' + config.get('app.staticsFolder'),
@@ -15,13 +15,13 @@ module.exports = {
     ],
     module: {
         rules: [
-            /*{
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'
                 }
-            },*/
+            },
             {
                 test: /\.(s*)css$/,
                 use: [

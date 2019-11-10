@@ -1,17 +1,11 @@
 const Router = require('express');
+const spa = require('../pages/spa');
+
 const router = Router();
 
 
-router.get('/', (req, res) => {
-    res.send('Hello World form server!')
-});
-
-router.get('/items', (req, res) => {
-    res.send('Hello World form items search server!')
-});
-
-router.get('/items/:id', (req, res) => {
-    res.send('Hello World form Item page server!')
-});
+router.get('/', spa);
+router.get('/items', spa);
+router.get('/items/:id', spa);
 
 module.exports = router;

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon index.js",
+    "start-dev": "NODE_ENV=development nodemon -r \"@babel/register\" index.js",
     "build": "rm -rf build && webpack --mode development",
     "watch": "rm -rf build && webpack --watch --mode development",
     "dist": "rm -rf build && webpack --mode production",
@@ -19,21 +19,31 @@
   "author": "Ernesto Rodriguez",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/register": "^7.7.0",
     "axios": "^0.19.0",
+    "babel-eslint": "^10.0.3",
     "config": "^3.2.4",
     "express": "^4.17.1",
     "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "webpack": "^4.41.2"
   },
   "devDependencies": {
-    "jest": "^24.9.0",
-    "jsdoc": "^3.6.3",
-    "nodemon": "^1.19.4",
-    "webpack-cli": "^3.3.10",
-    "postcss-loader": "^3.0.0",
-    "node-sass": "^4.13.0",
+    "javascript-style-guide": "^1.0.1",
+    "eslint-plugin-compat": "^3.3.0",
+    "eslint-plugin-react": "^7.16.0",
+    "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.0.5",
     "css-loader": "^3.2.0",
-    "sass-loader": "^8.0.0"
+    "eslint": "^5.0.0",
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "webpack-cli": "^3.3.10"
   }
 }
