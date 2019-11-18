@@ -10,7 +10,7 @@
     "dist": "rm -rf build && webpack --mode production",
     "test": "jest --config jest.config.js --coverage",
     "test:watch": "jest --watch",
-    "documentation": "jsdoc -c ./jsDocConf.json"
+    "documentation": "jsdoc --readme ./README.md -c ./jsDocConf.json"
   },
   "repository": {
     "type": "git",
