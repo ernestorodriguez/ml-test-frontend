@@ -24,8 +24,9 @@ const Layout = (props) => {
                             Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
                         </p>
                     <![endif]-->`}} />
-
-                    {children}
+                    <main id={'root-app'}>
+                        {children}
+                    </main>
                 </body>
             </html>
         </React.Fragment>);

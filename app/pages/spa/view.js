@@ -1,10 +1,16 @@
 const React = require('react');
-const Layout = require('../../components/layout');
+const { Fragment } = require('react');
+const Router = require('./router');
 
-const page = (props) => (
-    <Layout>
-        <div>HOLA MUNDO</div>
-    </Layout>
+/**
+ * templage for page, set scripts and common components for pages
+ * return {JSX}
+ */
+const page = () => (
+    <Fragment>
+        <Router />
+        <script src={'/spa.js'} />
+    </Fragment>
 );
 
 module.exports = page;

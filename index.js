@@ -8,5 +8,5 @@ const server = require('./app/server');
 
 App.use('/api/', api);
 App.use('/', server);
-App.use(express.static('dist'));
+App.use(express.static('build'));
 App.listen(port, () => console.log(`Server running on port: ${port}!`));
