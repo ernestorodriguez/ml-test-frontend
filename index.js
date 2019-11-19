@@ -9,4 +9,12 @@ const server = require('./app/server');
 App.use('/api/', api);
 App.use('/', server);
 App.use(express.static('build'));
-App.listen(port, () => console.log(`Server running on port: ${port}!`));
+
+
+
+/* istanbul ignore if */
+if (!module.parent) {
+    App.listen(port, () => console.log(`Server running on port: ${port}!`));
+}
+
+module.exports = App;
