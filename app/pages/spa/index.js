@@ -10,12 +10,16 @@ const router = Router();
  * @param res
  */
 const renderSPA = (req, res) => {
-    res.send(renderToString(controller({url: req.url})));
+    res.send(
+        `<!DOCTYPE html>
+         <html class="no-js" lang="">
+                ${renderToString(controller({url: req.url}))}
+         </html>
+        `
+    );
 };
 
 router.get('*', renderSPA);
-
-
 
 module.exports = router;
 
