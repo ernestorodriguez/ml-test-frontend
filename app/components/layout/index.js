@@ -1,5 +1,5 @@
 const React = require('react');
-
+const Header = require('../header');
 const Layout = (props) => {
     const {
         children,
@@ -23,6 +23,7 @@ const Layout = (props) => {
                         Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
                     </p>
                 <![endif]-->`}} />
+                <Header/>
                 <main id={'root-app'}>
                     {children}
                 </main>

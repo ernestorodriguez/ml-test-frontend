@@ -9,6 +9,7 @@
     "watch": "rm -rf build && webpack --watch --mode development",
     "dist": "rm -rf build && webpack --mode production",
     "test": "jest --config jest.config.js --coverage",
+    "test:e2e": "cypress run",
     "test:watch": "jest --watch",
     "documentation": "jsdoc --readme ./README.md -c ./jsDocConf.json"
   },
@@ -33,6 +34,8 @@
     "@babel/register": "^7.7.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
+    "cypress": "^3.6.1",
+    "cypress-cucumber-preprocessor": "^1.16.2",
     "copy-webpack-plugin": "^5.0.5",
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
@@ -50,5 +53,8 @@
     "sass-loader": "^8.0.0",
     "supertest": "^4.0.2",
     "webpack-cli": "^3.3.10"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
