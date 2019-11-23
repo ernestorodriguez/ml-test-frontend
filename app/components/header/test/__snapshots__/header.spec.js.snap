@@ -1,3 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component must show header with and input and button for search 1`] = `<header />`;
+exports[`Header component must show header with and input and button for search 1`] = `
+<header>
+  <form
+    action="/items"
+  >
+    <input
+      data-js="search-input"
+      name="q"
+    />
+    <button
+      data-js="search-submit"
+      type="submit"
+      value="buscar"
+    >
+      Buscar
+    </button>
+  </form>
+</header>
+`;

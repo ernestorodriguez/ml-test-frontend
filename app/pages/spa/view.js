@@ -6,9 +6,9 @@ const Router = require('./router');
  * templage for page, set scripts and common components for pages
  * return {JSX}
  */
-const page = () => (
+const page = (props) => (
     <Fragment>
-        <Router />
+        <Router {...props} />
         <script src={'/spa.js'} />
     </Fragment>
 );

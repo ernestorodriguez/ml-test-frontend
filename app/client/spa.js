@@ -8,9 +8,13 @@ const ReactDOM = require('react-dom');
 const View = require('../pages/spa/view');
 const { BrowserRouter } = require('react-router-dom');
 
+const preloadedState = window.__PRELOADED_STATE__;
+
+delete window.__PRELOADED_STATE__;
+
 ReactDOM.hydrate(
     <BrowserRouter>
-        <View/>
+        <View {...preloadedState} />
     </BrowserRouter>,
     document.getElementById('root-app'),
 );

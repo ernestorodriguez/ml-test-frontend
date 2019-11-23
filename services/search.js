@@ -8,12 +8,13 @@ class SearchItemsService {
         return restClient.get(apiPath, {
             params: {
                 q: query,
+                limit: 4,
             }
         }).then((response) => {
             return response.data;
         }).catch((error) => {
             console.error(`not data found for query: "${query}", error: ${JSON.stringify(error)}`);
-            return {}
+            return {};
         });
     }
 }

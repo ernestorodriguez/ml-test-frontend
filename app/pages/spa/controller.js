@@ -9,10 +9,10 @@ const { StaticRouter } = require('react-router');
  * @param url
  * @module
  */
-const controller = ({url}) => (
-    <Layout>
+const controller = ({url, pageData}) => (
+    <Layout pageData={pageData} title={'ML'}>
         <StaticRouter location={url} context={{}}>
-            <View />
+            <View pageData={pageData}/>
         </StaticRouter>
     </Layout>
 );

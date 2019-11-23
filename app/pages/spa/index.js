@@ -10,10 +10,15 @@ const router = Router();
  * @param res
  */
 const renderSPA = (req, res) => {
+    const config = {
+        pageData: res.serverResponse,
+        url: req.url
+    };
+
     res.send(
         `<!DOCTYPE html>
          <html class="no-js" lang="">
-                ${renderToString(controller({url: req.url}))}
+                ${renderToString(controller(config))}
          </html>
         `
     );

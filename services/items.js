@@ -11,14 +11,15 @@ class ItemsService {
         const getDescriptionItem = restClient.get(itemsDescriptionPath);
 
         return Promise.all([getItem, getDescriptionItem]).then((response) => {
-                const [itemsApiResponse, itemsDescriptionApiResponse] = response;
-                return {
-                    itemsApiResult: itemsApiResponse.data,
-                    itemsDescriptionApiResult: itemsDescriptionApiResponse.data,
-                };
-            }).catch((error) => {
-                console.error(`not data found for item: ${itemId}, error: ${JSON.stringify(error)}`);
-                return {}
+            const [itemsApiResponse, itemsDescriptionApiResponse] = response;
+
+            return {
+                itemsApiResult: itemsApiResponse.data,
+                itemsDescriptionApiResult: itemsDescriptionApiResponse.data,
+            };
+        }).catch((error) => {
+            console.error(`not data found for item: ${itemId}, error: ${JSON.stringify(error)}`);
+            return {};
         });
     }
 }
