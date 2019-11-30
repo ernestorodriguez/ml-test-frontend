@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component must show header with and input and button for search 1`] = `
+exports[`Header component must show header with and input and button for search and send query if button is press 1`] = `
 <header>
   <form
     action="/items"
@@ -8,13 +8,15 @@ exports[`Header component must show header with and input and button for search 
     <input
       data-js="search-input"
       name="q"
+      onChange={[Function]}
+      value="iphone 8"
     />
     <button
       data-js="search-submit"
+      onClick={[Function]}
       type="submit"
-      value="buscar"
     >
-      Buscar
+      buscar
     </button>
   </form>
 </header>

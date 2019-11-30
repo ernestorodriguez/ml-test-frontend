@@ -1,12 +1,15 @@
 const React = require('react');
 const { useEffect, useState } = require('react');
 const Item = require('../../components/item');
+const { useLocation } = require('react-router-dom');
 
 const ItemsPage = ({ pageData }) => {
     const [items, setItems] = useState(pageData.items);
+    const query = new URLSearchParams(useLocation().search);
 
     const fetchData = () =>  {
-        const res = fetch(`/api/items?q=${encodeURIComponent(pageData.userQuery)}`, {
+        const userQuery = query.get('q');
+        const res = fetch(`/api/items?q=${encodeURIComponent(userQuery)}`, {
             method: 'GET',
         });
 
@@ -18,7 +21,7 @@ const ItemsPage = ({ pageData }) => {
     };
 
     useEffect(() => {
-        if (pageData.userQuery) {
+        if (!items.length) {
             fetchData();
         }
     }, []);

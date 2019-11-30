@@ -19,13 +19,14 @@ describe('Search Item Service', () => {
         service.get('iphone 8 plus').then((response) => {
             console.log(response);
 
-            done()
+            done();
         });
         expect(axios.get).toBeCalledWith(
             'https://api.mercadolibre.com/sites/MLA/search',
             {
                 params: {
-                    q: "iphone 8 plus"
+                    limit: 4,
+                    q: 'iphone 8 plus'
                 }
             }
         );
@@ -41,7 +42,7 @@ describe('Search Item Service', () => {
 
         service.get('iphone 8 plus').then((response) => {
             expect(response).toEqual({});
-            done()
+            done();
         });
     });
 });

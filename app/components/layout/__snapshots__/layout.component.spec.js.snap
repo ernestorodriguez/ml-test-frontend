@@ -2,48 +2,50 @@
 
 exports[`Layout component should match snapshot 1`] = `
 <Fragment>
-  <html
-    className="no-js"
-    lang=""
-  >
-    <head>
-      <meta
-        charSet="utf-8"
-      />
-      <title>
-        Page Title
-      </title>
-      <meta
-        content=""
-        name="description"
-      />
-      <meta
-        content="width=device-width, initial-scale=1"
-        name="viewport"
-      />
-      <meta
-        content="#fafafa"
-        name="theme-color"
-      />
-    </head>
-    <body>
-      <div
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "
-                    <!--[if IE]>
-                        <p class=\\"browserupgrade\\">
-                            You are using an <strong>outdated</strong> browser.
-                            Please <a href=\\"https://browsehappy.com/\\">upgrade your browser</a> to improve your experience and security.
-                        </p>
-                    <![endif]-->",
-          }
+  <head>
+    <meta
+      charSet="utf-8"
+    />
+    <title>
+      Page Title
+    </title>
+    <meta
+      content=""
+      name="description"
+    />
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    <meta
+      content="#fafafa"
+      name="theme-color"
+    />
+  </head>
+  <body>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+                <!--[if IE]>
+                    <p class=\\"browserupgrade\\">
+                        You are using an <strong>outdated</strong> browser.
+                        Please <a href=\\"https://browsehappy.com/\\">upgrade your browser</a> to improve your experience and security.
+                    </p>
+                <![endif]-->",
         }
-      />
-      <main
-        id="root-app"
-      />
-    </body>
-  </html>
+      }
+    />
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "window.__PRELOADED_STATE__ =  {\\"pageData\\":undefined,\\"title\\":\\"Page Title\\"};",
+        }
+      }
+    />
+    <main
+      id="root-app"
+    />
+  </body>
 </Fragment>
 `;

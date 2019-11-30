@@ -1,6 +1,5 @@
 const React = require('react');
 const Layout = require('./index');
-const Enzyme = require('enzyme');
 const { shallow } = require('enzyme');
 
 describe('Layout component', () => {

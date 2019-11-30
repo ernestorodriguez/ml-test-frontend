@@ -1,11 +1,11 @@
 const React = require('react');
-const Header = require('../');
+const Item = require('../');
 const { shallow } = require('enzyme');
 const reactRouter = require('react-router-dom');
 
 jest.mock('react-router');
 
-describe('Header component', () => {
+describe('Item component', () => {
 
     afterAll(() => {
         reactRouter.mockRestore();
@@ -18,14 +18,15 @@ describe('Header component', () => {
         reactRouter.useHistory.mockImplementation(() => {
             return { push };
         });
-        const wrapper = shallow(<Header />);
-        wrapper.find('[data-js="search-input"]').simulate('change', {target: {value: 'iphone 8'}});
-        wrapper.find('[data-js="search-submit"]').simulate('click', {
+
+        const wrapper = shallow(<Item id={'MLA123'} />);
+
+        wrapper.find('[data-js="item"]').simulate('click', {
             preventDefault
         });
         expect(wrapper).toMatchSnapshot();
         expect(preventDefault.mock.calls.length).toBe(1);
-        expect(reactRouter.useHistory.mock.calls.length).toBe(2);
-        expect(push.mock.calls[0][0]).toBe('/items?q=iphone 8');
+        expect(reactRouter.useHistory.mock.calls.length).toBe(1);
+        expect(push.mock.calls[0][0]).toBe('/items/MLA123');
     });
 });

@@ -12,9 +12,10 @@ module.exports = {
         '!<rootDir>/coverage/**',
         '!<rootDir>/build/**',
         '!<rootDir>/docs/**',
+        '!<rootDir>/cypress/**',
         '<rootDir>/**/*.js',
     ],
     verbose: true,
-    testPathIgnorePatterns: ['<rootDir>/tests/e2e'],
+    testPathIgnorePatterns: ['<rootDir>/tests/e2e', '<rootDir>/cypress'],
     testEnvironment: 'node',
 };

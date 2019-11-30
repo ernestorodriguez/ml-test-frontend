@@ -2,7 +2,7 @@ const React = require('react');
 const { useEffect, useState } = require('react');
 const { useParams } = require('react-router-dom');
 
-const ItemDetailPage = ({pageData}) => {
+const ItemDetailPage = ({ pageData }) => {
     const [description, setDescription] = useState(pageData.item.description);
     const { id } = useParams();
     const fetchData = (id) =>  {

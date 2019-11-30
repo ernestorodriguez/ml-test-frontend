@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item component must show header with and input and button for search and send query if button is press 1`] = `
+<section
+  className="item"
+>
+  <form
+    action="/items/MLA123"
+  >
+    <button
+      data-js="item"
+      onClick={[Function]}
+      type="submit"
+    >
+      <h2>
+        Item
+      </h2>
+    </button>
+  </form>
+</section>
+`;
