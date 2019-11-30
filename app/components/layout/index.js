@@ -1,5 +1,4 @@
 const React = require('react');
-const Header = require('../header');
 const serialize = require('serialize-javascript');
 const Layout = (props) => {
     const {
@@ -25,7 +24,6 @@ const Layout = (props) => {
                         Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
                     </p>
                 <![endif]-->`}} />
-                <Header/>
                 <script dangerouslySetInnerHTML={{ __html: `window.__PRELOADED_STATE__ =  ${serialize({pageData, title})};`}} />
                 <main id={'root-app'}>
                     {children}
