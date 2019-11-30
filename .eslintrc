@@ -23,7 +23,10 @@
     "it": true,
     "after": true,
     "before": true,
-    "cy": true
+    "cy": true,
+    "jest": true,
+    "afterAll": true,
+    "afterEach": true
   },
   "env": {
     "browser": true
