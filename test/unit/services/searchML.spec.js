@@ -1,4 +1,4 @@
-const service = require('../../../services/search');
+const service = require('../../../services/searchML');
 const axios = require('axios');
 
 jest.mock('axios');

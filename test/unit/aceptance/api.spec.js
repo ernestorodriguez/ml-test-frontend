@@ -1,5 +1,7 @@
-const mock = require('./mock.json');
-const mockItem = require('./mockItem.json');
+const searchMlResponse = require('../mocks/searchMLresponse.json');
+const itemsMlResponse = require('../mocks/itemsMLresponse.json');
+const apiItemsItemIdResponse = require('../mocks/apiItemsItemIdResponse.json');
+const apiItemsResponse = require('../mocks/apiItemsResponse.json');
 const axios = require('axios');
 const request = require('supertest');
 const App = require('../../../index');
@@ -19,7 +21,7 @@ describe('Acceptance test for Api items', () => {
         axios.get.mockImplementation(() => new Promise((resolve) => {
             setTimeout(() => resolve({
                 status: 200,
-                data: mock,
+                data: searchMlResponse,
             }), 1000);
         }));
 
@@ -28,58 +30,14 @@ describe('Acceptance test for Api items', () => {
             .end((err, res) => {
                 expect(err).toEqual(null);
                 expect(res.status).toEqual(200);
-                expect(res.text).toEqual(JSON.stringify({
-                    author: {
-                        name: 'Ernesto',
-                        lastName: 'Rodriguez'
-                    },
-                    categories: ['Celulares y Teléfonos', 'Celulares y Smartphones'],
-                    items: [
-                        {
-                            id: 'MLA823005561',
-                            title: 'Apple iPhone 6s 32 Gb Gris Espacial',
-                            price: {
-                                currency: '$',
-                                amount: '30990',
-                                decimals: '20'
-                            },
-                            picture: 'http://mla-s2-p.mlstatic.com/898290-MLA31003118647_062019-I.jpg',
-                            condition: 'new',
-                            free_shipping: true,
-                        },
-                        {
-                            id: 'MLA823005563',
-                            title: 'Apple iPhone 7s 32 Gb Gris Espacial',
-                            price: {
-                                currency: '$',
-                                amount: '40990',
-                                decimals: '70'
-                            },
-                            picture: 'http://mla-s2-p.mlstatic.com/898290-MLA31003118647_062019-I.jpg',
-                            condition: 'new',
-                            free_shipping: true,
-                        },
-                        {
-                            id: 'MLA689528238',
-                            title: 'Funda Silicone Case 5s Se 6 6s 7 Plus iPhone 8 Plus Original',
-                            price: {
-                                currency: '$',
-                                amount: '699',
-                                decimals: '90'
-                            },
-                            picture: 'http://mla-s1-p.mlstatic.com/679417-MLA31019694444_062019-I.jpg',
-                            condition: 'new',
-                            free_shipping: false,
-                        }
-                    ],
-                }));
+                expect(res.text).toEqual(JSON.stringify(apiItemsResponse));
                 done();
             });
     });
 
     test('must return item description result in the correct format', (done) => {
         let response = 0;
-        const responses = [mockItem, {
+        const responses = [itemsMlResponse, {
             plain_text: 'item description',
         }];
 
@@ -98,26 +56,7 @@ describe('Acceptance test for Api items', () => {
             .end((err, res) => {
                 expect(err).toEqual(null);
                 expect(res.status).toEqual(200);
-                expect(res.text).toEqual(JSON.stringify({
-                    author: {
-                        name: 'Ernesto',
-                        lastName: 'Rodriguez'
-                    },
-                    item: {
-                        id: 'MLA823005561',
-                        title: 'Apple iPhone 6s 32 Gb Gris Espacial',
-                        price: {
-                            currency: '$',
-                            amount: '30990',
-                            decimals: '00'
-                        },
-                        picture: 'http://mla-s2-p.mlstatic.com/898290-MLA31003118647_062019-I.jpg',
-                        condition: 'new',
-                        free_shipping: true,
-                        sold_quantity: 1,
-                        description: 'item description'
-                    }
-                }));
+                expect(res.text).toEqual(JSON.stringify(apiItemsItemIdResponse));
                 done();
             });
     });

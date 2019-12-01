@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "Ernesto",
+    "lastName": "Rodriguez"
+  },
+  "item": {
+    "id": "MLA823005561",
+    "title": "Apple iPhone 6s 32 Gb Gris Espacial",
+    "price": {
+      "currency": "$",
+      "amount": "30990",
+      "decimals": "00"
+    },
+    "picture": "http://mla-s2-p.mlstatic.com/898290-MLA31003118647_062019-I.jpg",
+    "condition": "new",
+    "free_shipping": true,
+    "sold_quantity": 1,
+    "description": "item description"
+  }
+}

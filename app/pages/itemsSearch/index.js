@@ -2,7 +2,6 @@ const React = require('react');
 const { useEffect, useState } = require('react');
 const Item = require('../../components/item');
 const { useLocation } = require('react-router-dom');
-
 const ItemsPage = ({ pageData }) => {
     const [items, setItems] = useState(pageData.items);
     const query = new URLSearchParams(useLocation().search);

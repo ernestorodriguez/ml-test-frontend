@@ -26,6 +26,6 @@ describe('Header component', () => {
         expect(wrapper).toMatchSnapshot();
         expect(preventDefault.mock.calls.length).toBe(1);
         expect(reactRouter.useHistory.mock.calls.length).toBe(2);
-        expect(push.mock.calls[0][0]).toBe('/items?q=iphone 8');
+        expect(push).toBeCalledWith('/items?q=iphone 8');
     });
 });

@@ -1,5 +1,5 @@
-const mock = require('./mock.json');
-const mockItem = require('./mockItem.json');
+const mock = require('../mocks/searchMLresponse.json');
+const mockItem = require('../mocks/itemsMLresponse.json');
 const axios = require('axios');
 const request = require('supertest');
 const App = require('../../../index');

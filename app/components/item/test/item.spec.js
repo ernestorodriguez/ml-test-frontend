@@ -6,7 +6,6 @@ const reactRouter = require('react-router-dom');
 jest.mock('react-router');
 
 describe('Item component', () => {
-
     afterAll(() => {
         reactRouter.mockRestore();
     });
@@ -15,9 +14,7 @@ describe('Item component', () => {
         const preventDefault = jest.fn();
         const push = jest.fn();
 
-        reactRouter.useHistory.mockImplementation(() => {
-            return { push };
-        });
+        reactRouter.useHistory.mockImplementation(() => ({ push }));
 
         const wrapper = shallow(<Item id={'MLA123'} />);
 
@@ -27,6 +24,6 @@ describe('Item component', () => {
         expect(wrapper).toMatchSnapshot();
         expect(preventDefault.mock.calls.length).toBe(1);
         expect(reactRouter.useHistory.mock.calls.length).toBe(1);
-        expect(push.mock.calls[0][0]).toBe('/items/MLA123');
+        expect(push).toBeCalledWith('/items/MLA123');
     });
 });
