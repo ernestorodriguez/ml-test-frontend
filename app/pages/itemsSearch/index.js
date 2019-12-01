@@ -2,20 +2,17 @@ const React = require('react');
 const { useEffect, useState } = require('react');
 const Item = require('../../components/item');
 const { useLocation } = require('react-router-dom');
+const service = require('../../../services/api');
+
 const ItemsPage = ({ pageData }) => {
     const [items, setItems] = useState(pageData.items);
     const query = new URLSearchParams(useLocation().search);
 
     const fetchData = () =>  {
         const userQuery = query.get('q');
-        const res = fetch(`/api/items?q=${encodeURIComponent(userQuery)}`, {
-            method: 'GET',
-        });
 
-        res.then(res => {
-            res.json().then(data => {
-                setItems(data.items);
-            });
+        service.search(userQuery).then(data => {
+            setItems(data.items);
         }).catch(err => console.log(err));
     };
 

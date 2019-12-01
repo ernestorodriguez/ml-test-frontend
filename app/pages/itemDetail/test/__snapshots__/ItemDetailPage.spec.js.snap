@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Detail Page must handler error 1`] = `
+<ItemDetailPage
+  pageData={
+    Object {
+      "item": Object {},
+    }
+  }
+>
+  <article>
+    <h1>
+      ITEM DESCRIPTION
+    </h1>
+    <div
+      data-js="description"
+    />
+  </article>
+</ItemDetailPage>
+`;
+
+exports[`Item Detail Page must render page with params from ajax call 1`] = `
+<ItemDetailPage
+  pageData={
+    Object {
+      "item": Object {},
+    }
+  }
+>
+  <article>
+    <h1>
+      ITEM DESCRIPTION
+    </h1>
+    <div
+      data-js="description"
+    >
+      this is an ajax description
+    </div>
+  </article>
+</ItemDetailPage>
+`;
+
+exports[`Item Detail Page must render page with params from server 1`] = `
+<ItemDetailPage
+  pageData={
+    Object {
+      "item": Object {
+        "description": "this is a description",
+      },
+    }
+  }
+>
+  <article>
+    <h1>
+      ITEM DESCRIPTION
+    </h1>
+    <div
+      data-js="description"
+    >
+      this is a description
+    </div>
+  </article>
+</ItemDetailPage>
+`;

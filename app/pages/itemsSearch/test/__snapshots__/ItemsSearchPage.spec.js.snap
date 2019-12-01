@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Detail Page must handler error 1`] = `
+<ItemsPage
+  pageData={
+    Object {
+      "items": Array [],
+    }
+  }
+>
+  <article>
+    <h1>
+      SEARCH RESULT
+    </h1>
+  </article>
+</ItemsPage>
+`;
+
+exports[`Item Detail Page must render page with params from ajax call 1`] = `
+<ItemsPage
+  pageData={
+    Object {
+      "items": Array [],
+    }
+  }
+>
+  <article>
+    <h1>
+      SEARCH RESULT
+    </h1>
+    <Item
+      condition="new"
+      free_shipping={true}
+      id="MLA823005563"
+      key="MLA823005563"
+      picture="http://mla-s2-p.mlstatic.com/898290-MLA31003118647_062019-I.jpg"
+      price={
+        Object {
+          "amount": "40990",
+          "currency": "$",
+          "decimals": "70",
+        }
+      }
+      title="Apple iPhone 7s 32 Gb Gris Espacial"
+    >
+      <section
+        className="item"
+      >
+        <form
+          action="/items/MLA823005563"
+        >
+          <button
+            data-js="item"
+            onClick={[Function]}
+            type="submit"
+          >
+            <h2>
+              Item
+            </h2>
+          </button>
+        </form>
+      </section>
+    </Item>
+    <Item
+      condition="new"
+      free_shipping={false}
+      id="MLA689528238"
+      key="MLA689528238"
+      picture="http://mla-s1-p.mlstatic.com/679417-MLA31019694444_062019-I.jpg"
+      price={
+        Object {
+          "amount": "699",
+          "currency": "$",
+          "decimals": "90",
+        }
+      }
+      title="Funda Silicone Case 5s Se 6 6s 7 Plus iPhone 8 Plus Original"
+    >
+      <section
+        className="item"
+      >
+        <form
+          action="/items/MLA689528238"
+        >
+          <button
+            data-js="item"
+            onClick={[Function]}
+            type="submit"
+          >
+            <h2>
+              Item
+            </h2>
+          </button>
+        </form>
+      </section>
+    </Item>
+  </article>
+</ItemsPage>
+`;
+
+exports[`Item Detail Page must render page with params from server 1`] = `
+<ItemsPage
+  pageData={
+    Object {
+      "items": Array [
+        Object {
+          "condition": "new",
+          "free_shipping": true,
+          "id": "MLA823005561",
+          "picture": "http://mla-s2-p.mlstatic.com/898290-MLA31003118647_062019-I.jpg",
+          "price": Object {
+            "amount": "30990",
+            "currency": "$",
+            "decimals": "20",
+          },
+          "title": "Apple iPhone 6s 32 Gb Gris Espacial",
+        },
+      ],
+    }
+  }
+>
+  <article>
+    <h1>
+      SEARCH RESULT
+    </h1>
+    <Item
+      condition="new"
+      free_shipping={true}
+      id="MLA823005561"
+      key="MLA823005561"
+      picture="http://mla-s2-p.mlstatic.com/898290-MLA31003118647_062019-I.jpg"
+      price={
+        Object {
+          "amount": "30990",
+          "currency": "$",
+          "decimals": "20",
+        }
+      }
+      title="Apple iPhone 6s 32 Gb Gris Espacial"
+    >
+      <section
+        className="item"
+      >
+        <form
+          action="/items/MLA823005561"
+        >
+          <button
+            data-js="item"
+            onClick={[Function]}
+            type="submit"
+          >
+            <h2>
+              Item
+            </h2>
+          </button>
+        </form>
+      </section>
+    </Item>
+  </article>
+</ItemsPage>
+`;
