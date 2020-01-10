@@ -11,6 +11,7 @@ class SearchItemsService {
                 limit: 4,
             }
         }).then((response) => {
+            console.log('response', response.data)
             return response.data;
         }).catch((error) => {
             console.error(`not data found for query: "${query}", error: ${JSON.stringify(error)}`);
